@@ -8,7 +8,7 @@ MAINTAINER Thiago Almeida <thiagoalmeidasa@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update -y && \
-        apt-get install -y git git-ftp --no-install-recommends \
+        apt-get install -y git git-ftp --no-install-recommends && \
         apt-get autoclean && apt-get --purge --yes autoremove && \
         rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
